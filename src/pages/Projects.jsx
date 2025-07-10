@@ -9,6 +9,7 @@ import foodApp from "../images/FoodApp.png";
 import shopifymain from "../images/shopifymain.png";
 import movieFight from "../images/apifetch.png";
 import floppyBird from "../images/floppybird.png";
+import labogon from "../images/labogonwebsite.png";
 
 // Import Icons
 import {
@@ -25,6 +26,7 @@ import {
   SiTailwindcss,
   SiSupabase,
   SiVercel,
+  SiPhp,
 } from "react-icons/si";
 
 function Projects() {
@@ -73,7 +75,7 @@ function Projects() {
     {
       name: "Movie Fight",
       description:
-        "Last year create this web app to showcase my skills in API fecthing using javascript and html",
+        "Last year created this web app to showcase my skills in API fecthing using javascript and html",
 
       techTools: [
         { name: "HTML", icon: <FaHtml5 /> },
@@ -82,6 +84,19 @@ function Projects() {
         { name: "Github", icon: <FaGithub /> },
       ],
       image: movieFight,
+    },
+    {
+      name: "Labogon website",
+      description:
+        "I help a group of student to create a web app that mets the requirement features",
+
+      techTools: [
+        { name: "HTML", icon: <FaHtml5 /> },
+        { name: "CSS", icon: <FaCss3Alt /> },
+        { name: "Javascript", icon: <SiJavascript /> },
+        { name: "PHP", icon: <SiPhp /> },
+      ],
+      image: labogon,
     },
 
     {
