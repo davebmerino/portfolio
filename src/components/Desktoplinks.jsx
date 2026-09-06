@@ -18,31 +18,29 @@ function Destoplinks() {
           to="/"
           className={({ isActive }) =>
             `${navLinkClass} ${isActive ? activeClass : ""}`
-          }
-        >
+          }>
           Home
         </NavLink>
+        {/* 
         <NavLink
           to="/about-me"
           className={({ isActive }) =>
             `${navLinkClass} ${isActive ? activeClass : ""}`
-          }
-        >
+          }>
           About Me
-        </NavLink>
+        </NavLink> */}
+
         <NavLink
           to="/projects"
           className={({ isActive }) =>
             `${navLinkClass} ${isActive ? activeClass : ""}`
-          }
-        >
+          }>
           Projects
         </NavLink>
 
         <button
           onClick={handleHireMeClick}
-          className="bg-[#f5b754] cursor-pointer hover:bg-[#e0a841] transition-all px-6 py-3 text-white font-medium rounded-full text-sm w-full md:w-auto"
-        >
+          className="bg-[#f5b754] cursor-pointer hover:bg-[#e0a841] transition-all px-6 py-3 text-white font-medium rounded-full text-sm w-full md:w-auto">
           Hire Me
         </button>
       </div>

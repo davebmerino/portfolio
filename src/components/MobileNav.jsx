@@ -21,12 +21,11 @@ export default function MobileNav({ menuOpen, setMenuOpen }) {
                 `block px-3 py-2 rounded-md text-base font-medium ${
                   isActive ? "text-[#f5b754] font-semibold" : "text-[#0f172a]"
                 } hover:text-white hover:bg-gray-700`
-              }
-            >
+              }>
               Home
             </NavLink>
 
-            <NavLink
+            {/* <NavLink
               to="/about-me"
               onClick={() => setMenuOpen(false)}
               className={({ isActive }) =>
@@ -36,7 +35,7 @@ export default function MobileNav({ menuOpen, setMenuOpen }) {
               }
             >
               About Me
-            </NavLink>
+            </NavLink> */}
 
             <NavLink
               to="/projects"
@@ -45,15 +44,13 @@ export default function MobileNav({ menuOpen, setMenuOpen }) {
                 `block px-3 py-2 rounded-md text-base font-medium ${
                   isActive ? "text-[#f5b754] font-semibold" : "text-[#0f172a]"
                 } hover:text-white hover:bg-gray-700`
-              }
-            >
+              }>
               Projects
             </NavLink>
 
             <button
               onClick={handleHireMeClick}
-              className="bg-[#f5b754] cursor-pointer hover:bg-[#e0a841] transition-all px-6 py-3 text-white font-medium rounded-full text-sm w-full md:w-auto"
-            >
+              className="bg-[#f5b754] cursor-pointer hover:bg-[#e0a841] transition-all px-6 py-3 text-white font-medium rounded-full text-sm w-full md:w-auto">
               Hire Me
             </button>
           </div>
